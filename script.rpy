@@ -99,9 +99,9 @@ label start:
     show caballo chiquitoright at Position(xpos = 0.35, xanchor=0.5, ypos=0.67, yanchor=0.5) with dissolve
     show florecita chiquita at Position(xpos = 0.30, xanchor=0.5, ypos=0.67, yanchor=0.5) with dissolve
 
-#    call conLosGatos
+    call conLosGatos
 
-#label conLosGatos:
+label conLosGatos:
 
     play music dancing_skeletons volume 0.1
 
@@ -148,9 +148,9 @@ label start:
 
     "Yendo a visitar a los cerditos"
 
- #   call conLosCerdos
+    call conLosCerdos
 
-#label conLosCerdos:
+label conLosCerdos:
 
     "\"Oink, oink!\" dijo el cerdito, que no esperaba visitas."
     p "¿En qué puedo ayudarlos?"
@@ -165,9 +165,9 @@ label start:
 
     "Yendo a visitar a las cabritas"
 
-#    call conLasCabras
+    call conLasCabras
 
-#label conLasCabras:
+label conLasCabras:
 
     "\"Mee, mee! dijo\" la cabrita que no esperaba visitas."
     k "¿En qué puedo ayudarlos?"
@@ -186,9 +186,9 @@ label start:
 
     "Yendo a visitar a las ovejas"
 
-#    call conLasOvejas
+    call conLasOvejas
 
-#label conLasOvejas:
+label conLasOvejas:
 
     o "Hermana, hermana! ya estas aquí!"
     "Dijeron Copo de Nieve y Blanca Nieves"
@@ -211,7 +211,7 @@ label dormir_o_no:
 
     menu:
 
-##        "Que quieres hacer?"
+        "Que quieres hacer?"
 
         "Ir a dormir":
             jump adormir
@@ -220,11 +220,16 @@ label dormir_o_no:
             jump ajugar
 
 label adormir:
+
+    "Ir a dormir"
+
     "A dormir, a dormir" 
 
     return
 
 label ajugar:
+
+    o "Pero mami, queremos jugar!"
         
     m "Esta bien, pero solo un ratito"
     cn "Yo conozco a alguien que sabe muchos juegos."
